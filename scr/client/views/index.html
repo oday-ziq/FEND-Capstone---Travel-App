@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>✈️ Travel Planner App</h1>
+    </header>
+
+    <main>
+        <form id="tripForm">
+            <label for="city">Enter Destination:</label>
+            <input type="text" id="city" name="city" placeholder="E.g. Paris, Tokyo" required>
+
+            <label for="departure">Select Departure Date:</label>
+            <input type="date" id="departure" name="departure" required>
+
+            <button type="submit">Get Trip Info</button>
+        </form>
+
+        <section id="tripResult">
+            <h2>Trip Details</h2>
+            <p id="trip-location"></p>
+            <p id="trip-countdown"></p>
+            <p id="trip-weather"></p>
+            <img id="trip-image" src="" alt="Trip Destination Image">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Travel Planner App</p>
+    </footer>
+</body>
+</html>
